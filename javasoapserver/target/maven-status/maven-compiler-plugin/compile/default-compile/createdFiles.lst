@@ -1,0 +1,4 @@
+soap\HotelReservationService.class
+soap\HotelRoom.class
+soap\HotelReservationServiceImpl.class
+soap\launch.class
