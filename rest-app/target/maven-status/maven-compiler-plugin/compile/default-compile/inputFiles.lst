@@ -1,0 +1,15 @@
+/Users/the_pineapple_girl/Desktop/Web-Service-S-curis-s/rest-app/src/main/java/infres/ws/rest/model/Flight.java
+/Users/the_pineapple_girl/Desktop/Web-Service-S-curis-s/rest-app/src/main/java/infres/ws/rest/repository/FlightRepository.java
+/Users/the_pineapple_girl/Desktop/Web-Service-S-curis-s/rest-app/src/main/java/infres/ws/rest/dao/FlightDAO.java
+/Users/the_pineapple_girl/Desktop/Web-Service-S-curis-s/rest-app/src/main/java/infres/ws/rest/JavaRestServerApplication.java
+/Users/the_pineapple_girl/Desktop/Web-Service-S-curis-s/rest-app/src/main/java/infres/ws/rest/service/HotelService.java
+/Users/the_pineapple_girl/Desktop/Web-Service-S-curis-s/rest-app/src/main/java/infres/ws/rest/model/Hotel.java
+/Users/the_pineapple_girl/Desktop/Web-Service-S-curis-s/rest-app/src/main/java/infres/ws/rest/controller/OAuth2Controller.java
+/Users/the_pineapple_girl/Desktop/Web-Service-S-curis-s/rest-app/src/main/java/infres/ws/rest/model/Place.java
+/Users/the_pineapple_girl/Desktop/Web-Service-S-curis-s/rest-app/src/main/java/infres/ws/rest/example/config/OAuthSecurityConfig.java
+/Users/the_pineapple_girl/Desktop/Web-Service-S-curis-s/rest-app/src/main/java/infres/ws/rest/service/FlightService.java
+/Users/the_pineapple_girl/Desktop/Web-Service-S-curis-s/rest-app/src/main/java/infres/ws/rest/example/config/ApplicationConfig.java
+/Users/the_pineapple_girl/Desktop/Web-Service-S-curis-s/rest-app/src/main/java/infres/ws/rest/controller/FlightController.java
+/Users/the_pineapple_girl/Desktop/Web-Service-S-curis-s/rest-app/src/main/java/infres/ws/rest/example/config/SecurityConfig.java
+/Users/the_pineapple_girl/Desktop/Web-Service-S-curis-s/rest-app/src/main/java/infres/ws/rest/model/Company.java
+/Users/the_pineapple_girl/Desktop/Web-Service-S-curis-s/rest-app/src/main/java/infres/ws/rest/model/Date.java
