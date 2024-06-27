@@ -7,7 +7,7 @@ WORKDIR /app
 COPY target/javasoapserver.jar client.jar
 
 # Expose the port that the server will run on
-EXPOSE 8080
+EXPOSE 8082
 
 # Command to run the application
 CMD ["java", "-jar", "server.jar"]
