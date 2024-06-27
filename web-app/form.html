@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation App</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Reservation App</h1>
+        <form id="reservation-form">
+
+            <div class="form-group">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" >
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" >
+            </div>
+            <div class="form-group">
+                <label for="address">Mail:</label>
+                <input type="email" id="address" name="address" >
+            </div>
+            <div class="form-group">
+                <label for="city">City:</label>
+                <select id="city" name="city" required>
+                    <option value="Paris">Paris</option>
+                    <option value="Marseille">Marseille</option>
+                    <option value="Lyon">Lyon</option>
+                    <option value="Toulouse">Toulouse</option>
+                    <option value="Nantes">Nantes</option>
+                    <option value="Bordeaux">Bordeaux</option>
+                    <option value="Lille">Lille</option>
+                    <option value="Rennes">Rennes</option>
+                    <option value="Strasbourg">Strasbourg</option>
+                    <option value="Montpellier">Montpellier</option>
+                    <option value="Toulon">Toulon</option>
+                    <option value="Nancy">Nancy</option>
+                    <option value="Lorient">Lorient</option>
+                    <option value="Brest">Brest</option>
+                    <option value="Dijon">Dijon</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="country">Country:</label>
+                <input type="text" id="country" name="country" value="France" readonly>
+            </div>
+            <div class="guest-selector">
+                <div class="guest-type">
+                    <label>Adults</label>
+                    <div class="counter">
+                        <button type="button" class="decrement" onclick="updateGuestCount('adults', -1)">-</button>
+                        <span id="numAdults">1</span>
+                        <button type="button" class="increment" onclick="updateGuestCount('adults', 1)">+</button>
+                    </div>
+                </div>
+                <div class="guest-type">
+                    <label>Teens</label>
+                    <div class="counter">
+                        <button type="button" class="decrement" onclick="updateGuestCount('teens', -1)">-</button>
+                        <span id="numTeens">0</span>
+                        <button type="button" class="increment" onclick="updateGuestCount('teens', 1)">+</button>
+                    </div>
+                </div>
+                <div class="guest-type">
+                    <label>Children</label>
+                    <div class="counter">
+                        <button type="button" class="decrement" onclick="updateGuestCount('children', -1)">-</button>
+                        <span id="numChildren">0</span>
+                        <button type="button" class="increment" onclick="updateGuestCount('children', 1)">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="breakfast">Include Breakfast:</label>
+                <input type="checkbox" id="breakfast" name="breakfast">
+            </div>
+            <div class="form-group">
+                <label for="roomType">Room Type:</label>
+                <select id="roomType" name="roomType" required onchange="updateRoomImage()">
+                    <option value="" disabled selected>Select a room type</option>
+                    <option value="Standard">Standard</option>
+                    <option value="Deluxe">Deluxe</option>
+                    <option value="Suite">Suite</option>
+                </select>
+            </div>
+            <div class="form-group" id="roomImageContainer" style="text-align: center;">
+                <img id="roomImage" src="" alt="Room Image" style="width: 100%; max-width: 300px; display: none;">
+            </div>
+            <div class="form-group">
+                <label for="arrivalDate">Arrival Date:</label>
+                <input type="date" id="arrivalDate" name="arrivalDate" >
+            </div>
+            <div class="form-group">
+                <label for="departureDate">Departure Date:</label>
+                <input type="date" id="departureDate" name="departureDate" >
+            </div>
+            <button type="submit">Reserve Room and Flight </button>
+        </form>
+        <div id="result"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
